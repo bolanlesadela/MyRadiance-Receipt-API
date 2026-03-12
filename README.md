@@ -21,7 +21,7 @@ Sends order data as JSON, gets a downloadable PDF receipt back. Designed to simu
 Request body:
 ```json
 {
-  "customer": "Omobolanle,
+  "customer": "Omobolanle",
   "items": [
     {"name": "Glow Serum", "qty": 2, "price": 8500},
     {"name": "Lip Gloss", "qty": 1, "price": 3200}
