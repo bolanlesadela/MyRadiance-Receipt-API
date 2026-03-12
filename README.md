@@ -6,7 +6,7 @@ A REST API that generates PDF receipts for cosmetics orders. Built with Python a
 
 ## What it does
 
-Send order data as JSON, get a downloadable PDF receipt back. Designed to simulate how receipt generation works in real e-commerce backends.
+Sends order data as JSON, gets a downloadable PDF receipt back. Designed to simulate how receipt generation works in real e-commerce backends.
 
 ## Tech Stack
 
@@ -21,7 +21,7 @@ Send order data as JSON, get a downloadable PDF receipt back. Designed to simula
 Request body:
 ```json
 {
-  "customer": "Bolzy",
+  "customer": "Omobolanle",
   "items": [
     {"name": "Glow Serum", "qty": 2, "price": 8500},
     {"name": "Lip Gloss", "qty": 1, "price": 3200}
