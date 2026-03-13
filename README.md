@@ -2,12 +2,12 @@
 
 A receipt generation API with a branded UI. Built with Python, Flask, and React.
 
-![Receipt UI]
+Receipt UI
 <p align="center">
   <img src="ui.jpeg" width="700"/>
 </p>
 
-![Generated Receipt]
+Generated Receipt
 <p align="center">
   <img src="receipt.png" width="700"/>
 </p>
