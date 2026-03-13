@@ -1,53 +1,56 @@
 # MyRadiance Receipt API
 
-A REST API that generates PDF receipts for cosmetics orders. Built with Python and Flask.
+A receipt generation API with a branded UI. Built with Python, Flask, and React.
 
-![Sample Receipt](sample-receipt.png)
+![Receipt UI](ui.jpeg)
+![Generated Receipt](receipt.png)
 
 ## What it does
 
-Sends order data as JSON, gets a downloadable PDF receipt back. Designed to simulate how receipt generation works in real e-commerce backends.
+A small business owner adds a client name and order items in the UI. 
+The app calls the API, which generates a professional branded PDF receipt 
+and downloads it automatically. No Postman needed.
 
 ## Tech Stack
 
+**Backend**
 - Python 3
-- Flask — REST API framework
+- Flask — REST API
 - FPDF2 — PDF generation
+- Flask-CORS — cross-origin requests
 
-## API Usage
+**Frontend**
+- React + Vite
+- Axios — API calls
+
+## Running Locally
+
+**Backend**
+```bash
+cd receipt-api
+venv\Scripts\activate
+python app.py
+```
+
+**Frontend**
+```bash
+cd frontend
+npm run dev
+```
+
+## API
 
 **POST** `/generate-receipt`
-
-Request body:
 ```json
 {
-  "customer": "Omobolanle",
+  "customer": "Amaka",
   "items": [
-    {"name": "Glow Serum", "qty": 2, "price": 8500},
-    {"name": "Lip Gloss", "qty": 1, "price": 3200}
+    {"name": "Glow Serum", "qty": 2, "price": 8500}
   ]
 }
 ```
 
 Returns a downloadable PDF receipt.
-
-## How to Run
-
-1. Clone the repo
-2. Create and activate a virtual environment:
-```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-```
-3. Install dependencies:
-```bash
-   pip install flask fpdf2
-```
-4. Run the server:
-```bash
-   python app.py
-```
-5. Test with Postman or any HTTP client at `http://127.0.0.1:5000`
 
 ## Author
 
